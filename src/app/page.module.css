@@ -5,6 +5,11 @@
 
 .container {
   width: 1200px;
-  background-color: red;
+  height: calc(100vh - 30px);
   padding: 5px;
+}
+
+.center {
+  margin-top: 200px;
+  text-align: center;
 }
