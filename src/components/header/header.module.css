@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav_container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.nav:hover {
+  color: blue;
+  transition: all 0.3s ease-in-out;
+}
