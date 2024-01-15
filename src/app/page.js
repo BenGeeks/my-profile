@@ -44,7 +44,7 @@ export default function Home() {
       <section className={styles.skills}>
         {skillData.map((skill) => {
           return (
-            <div className={styles.bar_container}>
+            <div className={styles.bar_container} key={skill.name}>
               <span className={styles.bar_title}>{skill.name}</span>
               <div className={styles.bar}>
                 <div className={styles.bar_value} style={{ width: skill.value }}>
