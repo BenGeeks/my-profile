@@ -15,7 +15,14 @@ export default function RootLayout({ children }) {
       <body className={styles.body}>
         <div className={styles.container}>
           <Sidebar />
-          <main className={styles.main}>{children}</main>
+
+          <main className={styles.main}>
+            <div className={styles.header}>
+              <h1>Ben-Hur Vergara Gican II</h1>
+            </div>
+            {children}
+          </main>
+
           <Footer />
         </div>
       </body>

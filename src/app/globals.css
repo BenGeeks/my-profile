@@ -14,7 +14,8 @@ body {
 
 body {
   color: white;
-  background-image: linear-gradient(to bottom right, #250002, #000);
+  background-color: #190001;
+  /* background-image: linear-gradient(to bottom right, #250002, #000); */
 }
 
 a {

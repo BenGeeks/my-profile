@@ -1,0 +1,59 @@
+.header {
+  margin-bottom: 10px;
+  font-size: 2.6rem;
+}
+
+.container {
+  border-bottom: 1px solid #c70007;
+  padding: 10px;
+}
+
+.company {
+  margin: 30px 10px;
+  padding: 0px 10px;
+  border: 1px solid #c70007;
+}
+
+.company_header_container {
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-20px);
+}
+
+.company_name {
+  background-color: #190001;
+  padding: 0px 10px;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.position {
+  border: 1px solid #c70007;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.position_name_container {
+  padding: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-20px);
+}
+
+.position_name {
+  background-color: #190001;
+  padding: 0px 10px;
+  text-align: left;
+}
+
+.role_description_container {
+  margin-left: 50px;
+  transform: translateY(-20px);
+}
+
+.role_description_container li {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  padding: 2px;
+}
