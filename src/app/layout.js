@@ -1,8 +1,8 @@
-import './globals.css';
-import styles from './page.module.css';
-
-import Header from '@/components/header';
+import Sidebar from '@/components/side-bar/side-bar';
 import Footer from '@/components/footer';
+
+import './globals.css';
+import styles from './layout.module.css';
 
 export const metadata = {
   title: 'Ben-Hur Gican II',
@@ -14,8 +14,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={styles.body}>
         <div className={styles.container}>
-          <Header />
-          {children}
+          <Sidebar />
+          <main className={styles.main}>{children}</main>
           <Footer />
         </div>
       </body>

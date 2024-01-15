@@ -1,0 +1,22 @@
+.body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1200px;
+  height: calc(100vh - 50px);
+  padding: 20px;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 5px 5px 12px #7f0014;
+  margin: 10px;
+}
+
+.main {
+  display: flex;
+  width: calc(100% - 300px);
+  padding-left: 20px;
+  overflow-y: auto;
+  height: calc(100vh - 70px);
+}
