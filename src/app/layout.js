@@ -3,6 +3,7 @@ import Footer from '@/components/footer';
 
 import './globals.css';
 import styles from './layout.module.css';
+import Header from '@/components/header';
 
 export const metadata = {
   title: 'Ben-Hur Gican II',
@@ -12,17 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={styles.body}>
+      <body className={styles.body} suppressHydrationWarning={true}>
         <div className={styles.container}>
-          <Sidebar />
-
-          <main className={styles.main}>
-            <div className={styles.header}>
-              <h1>Ben-Hur Vergara Gican II</h1>
-            </div>
-            {children}
-          </main>
-
+          <Header />
+          <main className={styles.main}>{children}</main>
           <Footer />
         </div>
       </body>

@@ -6,9 +6,9 @@ import { ContactInfo } from '@/assets/data';
 const ContactPage = () => {
   return (
     <div className={styles.container}>
-      {ContactInfo.map((info) => {
+      {ContactInfo.map((info, index) => {
         return (
-          <div className={styles.info} key={info.data}>
+          <div className={styles.info} key={index}>
             <span className={styles.icon}>{info.icon}</span>
             <p>{info.data}</p>
           </div>

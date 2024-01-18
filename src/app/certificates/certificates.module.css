@@ -2,34 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10px;
 }
-
-/* .company_header_container {
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-20px);
-}
-
-.company_name {
-  background-color: #190001;
-  padding: 0px 10px;
-  font-size: 2rem;
-  text-align: left;
-} */
 
 .certificate_container {
-  width: 660px;
-  height: 496px;
+  width: 750px;
+  height: 560px;
   border: 1px solid #c70007;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 4px;
   cursor: pointer;
   margin-bottom: 10px;
 }
 
 .certificate_image {
   position: relative;
-  width: 640px;
-  height: 476px;
+  width: 740px;
+  height: 550px;
 }

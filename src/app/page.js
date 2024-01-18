@@ -1,12 +1,23 @@
 import React from 'react';
 import styles from './page.module.css';
+import Image from 'next/image';
 
 import { skillData } from '@/assets/data';
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.container}>
+      <div className={styles.profile_image}>
+        <Image
+          src="https://i.ibb.co/47fjkMZ/1705248700683.jpg"
+          fill
+          alt="Picture of Ben Gican II"
+          sizes="(max-width: 1200px) 100vw"
+          priority
+        />
+      </div>
       <div className={styles.description}>
+        <h2 className={styles.complete_name}>Ben-Hur Vergara Gican II </h2>
         <p>
           {`
         Meet a resourceful and self-taught web developer with a stellar reputation for getting the job done. With over 4 years of
@@ -49,6 +60,6 @@ export default function Home() {
           );
         })}
       </section>
-    </>
+    </div>
   );
 }

@@ -1,27 +1,23 @@
+'use client';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import styles from './header.module.css';
 
+import { navLinks } from '@/assets/data';
+
 const Header = () => {
+  const pathName = usePathname();
   return (
     <header className={styles.header}>
-      <div>
-        <h1>Ben-Hur Vergara Gican II</h1>
+      <div className={styles.nav_container}>
+        {navLinks.map((nav) => {
+          return (
+            <Link className={pathName === nav.href ? styles.nav_active : styles.nav} href={nav.href} key={nav.name}>
+              {nav.name}
+            </Link>
+          );
+        })}
       </div>
-
-      <ul className={styles.nav_container}>
-        <li className={styles.nav}>
-          <Link href="/experience"> Work Experience</Link>{' '}
-        </li>
-        <li className={styles.nav}>
-          <Link href="/courses">Courses and Trainings</Link>{' '}
-        </li>
-        <li className={styles.nav}>
-          <Link href="/education">Education</Link>{' '}
-        </li>
-        <li className={styles.nav}>
-          <Link href="/contact">Contact Me</Link>{' '}
-        </li>
-      </ul>
     </header>
   );
 };

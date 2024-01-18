@@ -5,6 +5,19 @@ import { SiUpwork } from 'react-icons/si';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 // ====================================================================
+// ======================== NAVIGATION LINKS ==========================
+// ====================================================================
+
+export const navLinks = [
+  { name: 'Overview', href: '/' },
+  { name: 'Experience', href: '/experience' },
+  { name: 'Certificates', href: '/certificates' },
+  { name: 'Education', href: '/education' },
+  { name: 'Portfolio', href: '/portfolio' },
+  { name: 'Contact', href: '/contact' },
+];
+
+// ====================================================================
 // ============================ SKILLS DATA ===========================
 // ====================================================================
 
@@ -28,8 +41,8 @@ export const skillData = [
 // ====================================================================
 
 export const ContactInfo = [
-  { icon: <MdOutlineEmail />, data: 'b3nhur77@gmail.com' },
-  { icon: <MdLocalPhone />, data: '+63 999 995 7176' },
+  { icon: <MdOutlineEmail />, data: <a href="mailto:b3nhur77@gmail.com">b3nhur77@gmail.com</a> },
+  { icon: <MdLocalPhone />, data: <a href="tel:+639999957176">+63 999 995 7176</a> },
   { icon: <IoMdPin />, data: 'B19 L23 Sta. Rosa Hills, Puting Kahoy, Silang Cavite Philippines 4118' },
   { icon: <AiOutlineSkype />, data: 'b3nhur77' },
   {
