@@ -312,94 +312,95 @@ export const certificateData = [
     title: 'Blockchain and Bitcoin Fundamentals',
     date: '01-11-2024',
   },
-  {
-    id: 'UC-ea603582-2dd1-47c4-809b-0b9144380c09',
-    title: 'Next JS: The Complete Developers Guide',
-    date: '12-27-2023',
-  },
-  {
-    id: 'UC-81770fc6-1f4b-43dc-99fa-b662c7eaedeb',
-    title: 'React For The Rest Of Us',
-    date: '01-12-2021',
-  },
-  {
-    id: 'UC-815f3511-7e25-4cd3-98cf-d16e5c31aa1f',
-    title: 'Deploying Node.js on GCP',
-    date: '09-22-2022',
-  },
-  {
-    id: 'UC-fc8a27d7-07fe-4523-9dde-3c6637501e36',
-    title: 'GCP for Beginners - Become a Google Cloud Digital Leader',
-    date: '01-22-2023',
-  },
-  {
-    id: 'UC-6c9af6e4-198f-48d1-8c64-e9736946bbb3',
-    title: 'Progressive Web Apps (PWA) - The Complete Guide',
-    date: '08-29-2021',
-  },
-  {
-    id: 'UC-48e2cd3a-4940-4d45-be70-68227038c9b8',
-    title: 'Docker & Kubernetes: The Practical Guide [2024 Edition]',
-    date: '09-16-2022',
-  },
-  {
-    id: 'UC-b9be7e27-7acc-40c1-9d4d-50625590536a',
-    title: 'The Complete 2020 Fullstack Web Developer Course',
-    date: '08-04-2020',
-  },
-  {
-    id: 'UC-0c246894-c78f-4f2e-9c37-6e82aade0a34',
-    title: 'Git a Web Developer Job: Mastering the Modern Workflow',
-    date: '03-13-2021',
-  },
-  {
-    id: 'UC-71820bab-34cc-4ca5-bd95-90078b0cb90e',
-    title: 'JavaScript: The Advanced Concepts',
-    date: '05-27-2023',
-  },
-  {
-    id: 'UC-c0e90caa-031d-4810-9222-4e7961576f99',
-    title: 'Complete NodeJS Developer (GraphQL, MongoDB, + more)',
-    date: '11-24-2023',
-  },
-  {
-    id: 'UC-3663ddcc-c7fa-442c-831f-847ecc5102c7',
-    title: 'Next.js 14 & React - The Complete Guide',
-    date: '12-09-2023',
-  },
-  {
-    id: 'UC-6fcffad9-01c1-4f8c-805a-3dfdc459470e',
-    title: 'Become a WordPress Developer: Unlocking Power With Code',
-    date: '12-25-2020',
-  },
-  {
-    id: 'UC-0e2769ee-8580-4a69-8f83-b141381249b7',
-    title: 'Learn JavaScript: Full-Stack from Scratch',
-    date: '12-30-2020',
-  },
-  {
-    id: 'UC-047e3797-bf91-47b2-811c-0fba13334395',
-    title: 'Clean Code',
-    date: '04-20-2023',
-  },
-  {
-    id: 'UC-a8a0b45f-fb96-4a91-918d-bb7046643c8f',
-    title: 'Meteor and React for Realtime Apps',
-    date: '04-01-2023',
-  },
-  {
-    id: 'UC-fa0803ef-526a-4b26-bb0f-5e7631789b96',
-    title: 'MongoDB - The Complete Developers Guide 2024',
-    date: '08-02-2022',
-  },
-  {
-    id: 'UC-c1f4bf6a-54e8-4dd8-b5d5-d01f6d61ef08',
-    title: 'Learn to Code with Ruby',
-    date: '11-30-2020',
-  },
-  {
-    id: 'UC-AB1SAQND',
-    title: 'Complete Linux Training Course to Get Your Dream IT Job 2024',
-    date: '04-17-2019',
-  },
+
+  // {
+  //   id: 'UC-ea603582-2dd1-47c4-809b-0b9144380c09',
+  //   title: 'Next JS: The Complete Developers Guide',
+  //   date: '12-27-2023',
+  // },
+  // {
+  //   id: 'UC-81770fc6-1f4b-43dc-99fa-b662c7eaedeb',
+  //   title: 'React For The Rest Of Us',
+  //   date: '01-12-2021',
+  // },
+  // {
+  //   id: 'UC-815f3511-7e25-4cd3-98cf-d16e5c31aa1f',
+  //   title: 'Deploying Node.js on GCP',
+  //   date: '09-22-2022',
+  // },
+  // {
+  //   id: 'UC-fc8a27d7-07fe-4523-9dde-3c6637501e36',
+  //   title: 'GCP for Beginners - Become a Google Cloud Digital Leader',
+  //   date: '01-22-2023',
+  // },
+  // {
+  //   id: 'UC-6c9af6e4-198f-48d1-8c64-e9736946bbb3',
+  //   title: 'Progressive Web Apps (PWA) - The Complete Guide',
+  //   date: '08-29-2021',
+  // },
+  // {
+  //   id: 'UC-48e2cd3a-4940-4d45-be70-68227038c9b8',
+  //   title: 'Docker & Kubernetes: The Practical Guide [2024 Edition]',
+  //   date: '09-16-2022',
+  // },
+  // {
+  //   id: 'UC-b9be7e27-7acc-40c1-9d4d-50625590536a',
+  //   title: 'The Complete 2020 Fullstack Web Developer Course',
+  //   date: '08-04-2020',
+  // },
+  // {
+  //   id: 'UC-0c246894-c78f-4f2e-9c37-6e82aade0a34',
+  //   title: 'Git a Web Developer Job: Mastering the Modern Workflow',
+  //   date: '03-13-2021',
+  // },
+  // {
+  //   id: 'UC-71820bab-34cc-4ca5-bd95-90078b0cb90e',
+  //   title: 'JavaScript: The Advanced Concepts',
+  //   date: '05-27-2023',
+  // },
+  // {
+  //   id: 'UC-c0e90caa-031d-4810-9222-4e7961576f99',
+  //   title: 'Complete NodeJS Developer (GraphQL, MongoDB, + more)',
+  //   date: '11-24-2023',
+  // },
+  // {
+  //   id: 'UC-3663ddcc-c7fa-442c-831f-847ecc5102c7',
+  //   title: 'Next.js 14 & React - The Complete Guide',
+  //   date: '12-09-2023',
+  // },
+  // {
+  //   id: 'UC-6fcffad9-01c1-4f8c-805a-3dfdc459470e',
+  //   title: 'Become a WordPress Developer: Unlocking Power With Code',
+  //   date: '12-25-2020',
+  // },
+  // {
+  //   id: 'UC-0e2769ee-8580-4a69-8f83-b141381249b7',
+  //   title: 'Learn JavaScript: Full-Stack from Scratch',
+  //   date: '12-30-2020',
+  // },
+  // {
+  //   id: 'UC-047e3797-bf91-47b2-811c-0fba13334395',
+  //   title: 'Clean Code',
+  //   date: '04-20-2023',
+  // },
+  // {
+  //   id: 'UC-a8a0b45f-fb96-4a91-918d-bb7046643c8f',
+  //   title: 'Meteor and React for Realtime Apps',
+  //   date: '04-01-2023',
+  // },
+  // {
+  //   id: 'UC-fa0803ef-526a-4b26-bb0f-5e7631789b96',
+  //   title: 'MongoDB - The Complete Developers Guide 2024',
+  //   date: '08-02-2022',
+  // },
+  // {
+  //   id: 'UC-c1f4bf6a-54e8-4dd8-b5d5-d01f6d61ef08',
+  //   title: 'Learn to Code with Ruby',
+  //   date: '11-30-2020',
+  // },
+  // {
+  //   id: 'UC-AB1SAQND',
+  //   title: 'Complete Linux Training Course to Get Your Dream IT Job 2024',
+  //   date: '04-17-2019',
+  // },
 ];
