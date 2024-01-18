@@ -314,7 +314,7 @@ export const certificateData = [
   },
   {
     id: 'UC-ea603582-2dd1-47c4-809b-0b9144380c09',
-    title: "Next JS: The Complete Developer's Guide",
+    title: 'Next JS: The Complete Developers Guide',
     date: '12-27-2023',
   },
   {
@@ -391,11 +391,6 @@ export const certificateData = [
     id: 'UC-fa0803ef-526a-4b26-bb0f-5e7631789b96',
     title: 'MongoDB - The Complete Developers Guide 2024',
     date: '08-02-2022',
-  },
-  {
-    id: 'UC-c1f4bf6a-54e8-4dd8-b5d5-d01f6d61ef08',
-    title: 'Learn to Code with Ruby',
-    date: '11-30-2020',
   },
   {
     id: 'UC-c1f4bf6a-54e8-4dd8-b5d5-d01f6d61ef08',
