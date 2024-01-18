@@ -19,7 +19,13 @@ const Sidebar = () => {
   return (
     <div className={styles.side_bar}>
       <div className={styles.profile_image}>
-        <Image src="https://i.ibb.co/47fjkMZ/1705248700683.jpg" fill alt="Picture of Ben Gican II" />
+        <Image
+          src="https://i.ibb.co/47fjkMZ/1705248700683.jpg"
+          fill
+          alt="Picture of Ben Gican II"
+          sizes="(max-width: 1200px) 100vw"
+          priority
+        />
       </div>
       <div className={styles.nav_container}>
         {navLinks.map((nav) => {
