@@ -389,7 +389,7 @@ export const certificateData = [
   },
   {
     id: 'UC-fa0803ef-526a-4b26-bb0f-5e7631789b96',
-    title: `MongoDB - The Complete Developer's Guide 2024`,
+    title: 'MongoDB - The Complete Developers Guide 2024',
     date: '08-02-2022',
   },
   {
