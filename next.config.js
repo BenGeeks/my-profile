@@ -2,7 +2,18 @@
 
 const nextConfig = {
   images: {
-    domains: ['i.ibb.co'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.ibb.co',
+        pathname: '**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'udemy-certificate.s3.amazonaws.com',
+        pathname: '**',
+      },
+    ],
   },
 };
 

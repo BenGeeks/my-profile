@@ -12,7 +12,7 @@ const Sidebar = () => {
   const navLinks = [
     { name: 'Overview', href: '/' },
     { name: 'Work Experience', href: '/experience' },
-    { name: 'Courses and Training', href: '/courses' },
+    { name: 'Training Certificates', href: '/certificates' },
     { name: 'Educational Background', href: '/education' },
     { name: 'Contact Information', href: '/contact' },
   ];

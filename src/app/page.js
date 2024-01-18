@@ -15,8 +15,8 @@ export default function Home() {
         <p>
           Having earned a Top Rated Plus rating on Upwork, this developer has successfully delivered high-quality projects, demonstrating a
           commitment to excellence. With a background encompassing 15 years in technical support, he brings a wealth of experience in
-          assisting and troubleshooting users. Additionally, boasting 6 years of thriving in a work-from-home environment, his adaptability
-          and discipline shine through.
+          assisting and troubleshooting users' concerns and issues. Additionally, boasting 6 years of thriving in a work-from-home
+          environment, his adaptability and discipline shine through.
         </p>
         <br />
         <p>
