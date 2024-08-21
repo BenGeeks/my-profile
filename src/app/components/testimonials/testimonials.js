@@ -59,7 +59,6 @@ const Testimonials = () => {
           <p>We would highly recommend him.</p>
         </div>
       </div>
-      <ContactButtonWhite />
     </section>
   );
 };
