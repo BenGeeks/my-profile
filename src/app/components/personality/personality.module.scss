@@ -1,0 +1,176 @@
+@import '@/styles/animations';
+@import '@/styles/variables';
+
+.container {
+  background-image: linear-gradient(to bottom left, $primary-color-transparent-lighter, $primary-color-transparent-darker), url('/images/mountain_ranges.jpg');
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 80px;
+  text-align: center;
+  transform: skewY(-6deg);
+
+  h2 {
+    font-size: 42px;
+    color: $secondary-color-darker;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    transform: skewY(6deg);
+
+    &:hover {
+      transform: scale(1.1);
+      text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.card_container {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: row;
+  transform: skewY(6deg);
+}
+
+.card_container_split {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+.card {
+  width: calc(25vw - 3vw);
+  height: 350px;
+  background-color: rgba(white, 0.8);
+  transition: all 0.2s ease-out;
+  border-radius: 3px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(black, 0.2);
+  }
+
+  &__img {
+    background-size: cover;
+    background-position: center;
+    height: 160px;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 0 100%, 100% 90%, 100% 0);
+
+    &__1 {
+      background-image: linear-gradient(to bottom left, $primary-color-darker, $primary-color-lighter), url('/images/innovative.jpg');
+    }
+
+    &__2 {
+      background-image: linear-gradient(to bottom left, $secondary-color-darker, $secondary-color-lighter), url('/images/versatile.png');
+    }
+
+    &__3 {
+      background-image: linear-gradient(to bottom left, $tertiary-color-darker, $tertiary-color-lighter), url('/images/reliable.jpg');
+    }
+
+    &__4 {
+      background-image: linear-gradient(to bottom left, $quaternary-color-darker, $quaternary-color-lighter), url('/images/collaborative.jpg');
+    }
+  }
+
+  &__header {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.2;
+    display: inline-block;
+    padding: 5px 15px;
+    position: absolute;
+    right: 10px;
+    top: 120px;
+
+    &__1 {
+      background-color: rgba($primary-color-darker, 0.75);
+    }
+    &__2 {
+      background-color: rgba($secondary-color-darker, 0.75);
+    }
+    &__3 {
+      background-color: rgba($tertiary-color-darker, 0.75);
+    }
+    &__4 {
+      background-color: rgba($quaternary-color-darker, 0.75);
+    }
+  }
+
+  p {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #333;
+  }
+}
+
+.btn_container {
+  transform: skewY(6deg);
+}
+
+@media (max-width: 1360px) {
+  .card {
+    width: 250px;
+    height: 390px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 200px;
+    height: 410px;
+  }
+}
+
+@media (max-width: 800px) {
+  .card_container {
+    flex-direction: column;
+  }
+
+  .card_container_split {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 250px;
+    height: 390px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .highlights_container {
+    height: 1600px;
+    clip-path: polygon(0 5%, 0 100%, 100% 95%, 100% 0);
+  }
+
+  .card_container {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .card_container_split {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .card {
+    width: 350px;
+    height: 320px;
+    margin-top: 15px;
+  }
+}

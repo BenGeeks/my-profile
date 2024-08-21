@@ -22,12 +22,12 @@ export const navLinks = [
 // ====================================================================
 
 export const skillData = [
-  { name: 'JavaScript', value: '90%' },
+  { name: 'JavaScript', value: '92%' },
   { name: 'ReactJs', value: '90%' },
   { name: 'NodeJs', value: '80%' },
   { name: 'MongoDB', value: '75%' },
   { name: 'ExpressJs', value: '75%' },
-  { name: 'NextJs', value: '60%' },
+  { name: 'NextJs', value: '83%' },
   { name: 'HTML5', value: '92%' },
   { name: 'CSS3', value: '90%' },
   { name: 'English', value: '95%' },

@@ -1,0 +1,46 @@
+$primary-color: #55c57a;
+$primary-color-lighter: #7fe59c;
+$primary-color-darker: #3f9e61;
+$primary-color-transparent-lighter: rgba($primary-color-lighter, 0.5);
+$primary-color-transparent-darker: rgba($primary-color-darker, 0.5);
+
+$secondary-color: #7a55c5;
+$secondary-color-lighter: #9a7add;
+$secondary-color-darker: #6041a0;
+
+$tertiary-color: #c57a55;
+$tertiary-color-lighter: #d99579;
+$tertiary-color-darker: #a36145;
+
+$quaternary-color: #c75582;
+$quaternary-color-lighter: #db78a1;
+$quaternary-color-darker: #a14468;
+
+$header-secondary-color-gradiant: linear-gradient(
+  to bottom,
+  $secondary-color-darker,
+  $secondary-color-darker,
+  $secondary-color-lighter,
+  $secondary-color-darker,
+  $secondary-color-darker,
+  $secondary-color-darker
+);
+
+$header-primary-color-gradiant: linear-gradient(
+  to bottom,
+  $primary-color-darker,
+  $primary-color-darker,
+  $primary-color-lighter,
+  $primary-color-darker,
+  $primary-color-darker,
+  $primary-color-darker
+);
+
+$header-tertiary-color-gradiant: linear-gradient(
+  to bottom,
+  $tertiary-color-darker,
+  $tertiary-color-lighter,
+  $tertiary-color-darker,
+  $tertiary-color-darker,
+  $tertiary-color-darker
+);

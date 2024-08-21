@@ -1,24 +1,27 @@
+import { Roboto } from 'next/font/google';
 import Sidebar from '@/components/side-bar/side-bar';
 import Footer from '@/components/footer';
 
-import './globals.css';
-import styles from './layout.module.css';
+import './globals.scss';
 import Header from '@/components/header';
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['300', '400'],
+});
 
 export const metadata = {
   title: 'Ben-Hur Gican II',
-  description: 'A web developer profile page',
+  description: 'A javaScript full-stack developer',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={styles.body} suppressHydrationWarning={true}>
-        <div className={styles.container}>
-          <Header />
-          <main className={styles.main}>{children}</main>
-          <Footer />
-        </div>
+      <body suppressHydrationWarning={true} className={roboto.className}>
+        {children}
+        {/* <Footer /> */}
       </body>
     </html>
   );
