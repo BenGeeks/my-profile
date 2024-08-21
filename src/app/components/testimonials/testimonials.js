@@ -35,8 +35,8 @@ const Testimonials = () => {
         <div className={styles.text}>
           <h3>I highly recomment working with Ben!</h3>
           <p>
-            "We had an exceptional experience working with Ben. His professionalism, communication, and quality of work were top-notch and exceeded
-            expectations. His dedication and skills set him apart.
+            We had an exceptional experience working with Ben. His professionalism, communication, and quality of work were top-notch and exceeded expectations.
+            His dedication and skills set him apart.
           </p>
           <br />
           <p>I highly recommend and look forward to future collaborations!</p>
