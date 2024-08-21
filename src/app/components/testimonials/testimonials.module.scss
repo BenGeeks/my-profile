@@ -52,9 +52,12 @@
     border: 3px solid white;
 
     img {
-      height: 100%;
       transition: all 0.3s ease-out;
       transform: scale(1.1);
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      object-position: center;
     }
 
     figcaption {
@@ -140,9 +143,23 @@
 @media (max-width: 500px) {
   .testimonial {
     transform: skewX(-5deg);
+    padding: 10px;
+
+    figure {
+      width: 100px;
+      height: 100px;
+      margin: 0;
+      margin-right: 20px;
+    }
 
     & > * {
       transform: skewX(5deg);
+    }
+  }
+
+  .text {
+    h3 {
+      font-size: 0.9rem;
     }
   }
 }

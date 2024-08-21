@@ -81,3 +81,18 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+  .container {
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
