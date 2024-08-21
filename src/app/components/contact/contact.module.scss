@@ -39,6 +39,11 @@
   overflow-wrap: break-word;
   margin-bottom: 50px;
   overflow: hidden;
+
+  a {
+    word-break: break-all;
+    hyphens: auto;
+  }
 }
 
 .info {
@@ -141,7 +146,7 @@
     background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 89%, rgba(255, 255, 255, 0) 89%), url('/images/taal.jpg');
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 30px;
   }
   .info {
@@ -149,7 +154,7 @@
   }
   .icon {
     font-size: 0.8rem;
-    margin-right: 10px;
+    margin-right: 5px;
     padding-top: 5px;
   }
 }
