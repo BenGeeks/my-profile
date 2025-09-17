@@ -1,6 +1,6 @@
 $primary-color: #55c57a;
 $primary-color-lighter: #7fe59c;
-$primary-color-darker: #3f9e61;
+$primary-color-darker: #245538;
 $primary-color-transparent-lighter: rgba($primary-color-lighter, 0.5);
 $primary-color-transparent-darker: rgba($primary-color-darker, 0.5);
 
@@ -26,21 +26,6 @@ $header-secondary-color-gradiant: linear-gradient(
   $secondary-color-darker
 );
 
-$header-primary-color-gradiant: linear-gradient(
-  to bottom,
-  $primary-color-darker,
-  $primary-color-darker,
-  $primary-color-lighter,
-  $primary-color-darker,
-  $primary-color-darker,
-  $primary-color-darker
-);
+$header-primary-color-gradiant: linear-gradient(to bottom, $primary-color-darker, $primary-color-darker, $primary-color-lighter, $primary-color-darker, $primary-color-darker, $primary-color-darker);
 
-$header-tertiary-color-gradiant: linear-gradient(
-  to bottom,
-  $tertiary-color-darker,
-  $tertiary-color-lighter,
-  $tertiary-color-darker,
-  $tertiary-color-darker,
-  $tertiary-color-darker
-);
+$header-tertiary-color-gradiant: linear-gradient(to bottom, $tertiary-color-darker, $tertiary-color-lighter, $tertiary-color-darker, $tertiary-color-darker, $tertiary-color-darker);
