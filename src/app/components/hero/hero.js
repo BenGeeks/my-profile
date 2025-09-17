@@ -1,7 +1,7 @@
-import Image from "next/image";
 import { ContactButtonWhite } from "../contact_button.js/contact_button";
 import { Permanent_Marker, Pirata_One } from "next/font/google";
 import styles from "./hero.module.scss";
+import Image from "next/image";
 import React from "react";
 
 const permanentMarker = Permanent_Marker({

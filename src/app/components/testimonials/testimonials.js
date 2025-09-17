@@ -21,7 +21,7 @@ const Testimonials = () => {
     <section className={styles.container}>
       <div className={styles.bg_video}>
         {showVideo ? (
-          <video className={styles.bg_video__content} autoPlay muted loop playsInline preload="none" poster="/images/video_poster.png">
+          <video className={styles.bg_video__content} autoPlay muted loop playsInline preload="none">
             <source src="/images/bg-video.mp4" type="video/mp4" />
             Your browser is not supported
           </video>
