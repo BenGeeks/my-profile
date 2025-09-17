@@ -1,69 +1,80 @@
-import { ContactButtonWhite } from "../contact_button.js/contact_button";
-import styles from "./personality.module.scss";
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
+import styles from "./testimonials.module.scss";
 import Image from "next/image";
 
-const Personality = () => {
+const Testimonials = () => {
+  const [showVideo, setShowVideo] = useState(false);
+
+  useEffect(() => {
+    const onLoad = () => setShowVideo(true);
+    if (document.readyState === "complete") {
+      setShowVideo(true);
+    } else {
+      window.addEventListener("load", onLoad);
+      return () => window.removeEventListener("load", onLoad);
+    }
+  }, []);
+
   return (
     <section className={styles.container}>
-      {/* Hero background image */}
-      <Image src="/images/mountain_ranges.jpg" alt="Mountain Ranges" fill priority fetchPriority="high" className={styles.hero_bg} sizes="100vw" />
-      {/* Gradient overlay */}
-      <div className={styles.overlay}></div>
+      <div className={styles.bg_video}>
+        {showVideo && (
+          <video className={styles.bg_video__content} autoPlay muted loop playsInline preload="none" poster="/images/video_poster.png">
+            <source src="/images/bg-video.mp4" type="video/mp4" />
+            Your browser is not supported
+          </video>
+        )}
+      </div>
+      <h2>Testimonials</h2>
 
-      <h2>Personality</h2>
-
-      <div className={styles.card_container}>
-        <div className={styles.card}>
-          <div className={styles.card__img}>
-            <Image src="/images/innovative.jpg" alt="Innovative" fill className={styles.card__img__content} sizes="(max-width: 768px) 100vw, 33vw" />
-          </div>
-          <h3 className={`${styles.card__header} ${styles.bg_primary}`}>Innovative</h3>
+      <div className={styles.testimonial}>
+        <figure className={styles.circle}>
+          <Image src="/images/bruna.jpeg" alt="image of bruna" width={160} height={160} />
+          <figcaption className={styles.testimonial_caption}>Bruna Menegatti</figcaption>
+        </figure>
+        <div className={styles.text}>
+          <h3>Ben is a shooting star!</h3>
           <p>
-            Crafting modern web solutions that push the boundaries of technology. With expertise in React JS and Next JS, I build responsive, dynamic applications that offer exceptional user
-            experiences.
-          </p>
-        </div>
-
-        <div className={styles.card}>
-          <div className={styles.card__img}>
-            <Image src="/images/versatile.png" alt="Versatile" fill className={styles.card__img__content} sizes="(max-width: 768px) 100vw, 33vw" />
-          </div>
-          <h3 className={`${styles.card__header} ${styles.bg_secondary}`}>Versatile</h3>
-          <p>
-            From frontend interfaces to backend systems, I deliver comprehensive solutions. My proficiency in the MERN stack allows me to create end-to-end applications that are both robust and
-            scalable.
-          </p>
-        </div>
-
-        <div className={styles.card}>
-          <div className={styles.card__img}>
-            <Image src="/images/reliable.jpg" alt="Reliable" fill className={styles.card__img__content} sizes="(max-width: 768px) 100vw, 33vw" />
-          </div>
-          <h3 className={`${styles.card__header} ${styles.bg_tertiary}`}>Reliable</h3>
-          <p>
-            With over four years of industry experience, I bring reliability to every project. I adhere to best practices and deliver high-quality results, ensuring your project is completed on time
-            and to the highest standards.
-          </p>
-        </div>
-
-        <div className={styles.card}>
-          <div className={styles.card__img}>
-            <Image src="/images/collaborative.jpg" alt="Collaborative" fill className={styles.card__img__content} sizes="(max-width: 768px) 100vw, 33vw" />
-          </div>
-          <h3 className={`${styles.card__header} ${styles.bg_quaternary}`}>Collaborative</h3>
-          <p>
-            Effective communication and teamwork are at the heart of my approach. I work closely with clients and stakeholders to understand their needs, translating ideas into efficient, scalable
-            code that meets project goals.
+            Ben is a shooting star whose career as a developer will go far. He is not affraid to learn, ask, suggest. He communicates well, is a great team member and was very valuable in our project.
+            His latest task consisted in turning a cloud-based software into a PWA, which he did successfully, even having been his first attempt at it. I shall be happy to have him join our team in
+            the future any time again.
           </p>
         </div>
       </div>
 
-      <div className={styles.btn_container}>
-        <ContactButtonWhite />
+      <div className={styles.testimonial}>
+        <figure className={styles.circle}>
+          <Image src="/images/nik.jpg" alt="image of nik" width={160} height={160} />
+          <figcaption>Nik Thakorlal</figcaption>
+        </figure>
+        <div className={styles.text}>
+          <h3>I highly recommend working with Ben!</h3>
+          <p>
+            We had an exceptional experience working with Ben. His professionalism, communication, and quality of work were top-notch and exceeded expectations. His dedication and skills set him
+            apart.
+          </p>
+          <br />
+          <p>I highly recommend and look forward to future collaborations!</p>
+        </div>
+      </div>
+
+      <div className={styles.testimonial}>
+        <figure className={styles.circle}>
+          <Image src="/images/dino.jpg" alt="image of dino" width={160} height={160} />
+          <figcaption>Dino Dungog</figcaption>
+        </figure>
+        <div className={styles.text}>
+          <h3>Ben was an amazing talent overall!</h3>
+          <p>He was more skilled and had a lot of knowledge than what we expected from him.</p>
+          <p>We would highly suggest him to anyone who is looking for an all-rounder, one who can be very versatile on any fields within the SaaS Industry and one who is very hungry to learn more.</p>
+          <br />
+          <p>We would highly recommend him.</p>
+        </div>
       </div>
     </section>
   );
 };
 
-export default Personality;
+export default Testimonials;
