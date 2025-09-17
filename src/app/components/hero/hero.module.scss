@@ -3,30 +3,34 @@
 
 .hero {
   position: relative;
-  height: 70vw;
+  height: 70vh; // control hero height
   display: flex;
   clip-path: polygon(0 0, 0 100%, 100% 90%, 100% 0);
   overflow: hidden;
 }
 
 .hero_bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.hero_bg_img {
   object-fit: cover;
   object-position: bottom;
-  z-index: -1;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom left, $primary-color-transparent-darker, $primary-color-transparent-lighter);
-  z-index: 0;
+  z-index: -1;
 }
 
 .profile_image {
   position: relative;
-  width: 50%;
-  height: auto;
-  min-height: 300px;
+  flex: 1;
+  min-height: 100%;
   z-index: 1;
 
   .profile_img_content {
@@ -36,7 +40,7 @@
 }
 
 .text_container {
-  width: 50%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -57,8 +61,6 @@
 .description {
   padding: 30px;
   text-align: center;
-  position: relative;
-  align-items: center;
 
   h2 {
     margin-top: 60px;
@@ -148,10 +150,8 @@
     height: auto;
   }
 
-  .description {
-    h2 {
-      font-size: 40px;
-    }
+  .description h2 {
+    font-size: 40px;
   }
 
   .btn {
@@ -165,12 +165,12 @@
   }
 
   .profile_image {
-    width: 30%;
+    flex: 0 0 30%;
     min-height: 200px;
   }
 
   .text_container {
-    width: 70%;
+    flex: 0 0 70%;
 
     h4 {
       font-size: 60px;
@@ -225,8 +225,7 @@
   }
 
   .description {
-    padding: 0px;
-    padding-top: 30px;
+    padding: 30px 0 0;
 
     h2 {
       font-size: 1.6rem;

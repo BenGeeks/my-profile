@@ -6,7 +6,10 @@ import Image from "next/image";
 const Personality = () => {
   return (
     <section className={styles.container}>
-      <Image src="/images/mountain_ranges.jpg" alt="Hero" fill priority fetchPriority="high" sizes="100vw" />
+      {/* background image */}
+      <div className={styles.imageWrapper}>
+        <Image src="/images/mountain_ranges.jpg" alt="Mountain ranges" fill sizes="100vw" priority className={styles.bg_img} />
+      </div>
       <div className={styles.overlay}></div>
 
       <h2>Personality</h2>
