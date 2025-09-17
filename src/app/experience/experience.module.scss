@@ -1,3 +1,6 @@
+@import "@/styles/animations";
+@import "@/styles/variables";
+
 .container {
   padding: 10px;
 }
@@ -5,7 +8,7 @@
 .company {
   margin: 30px 10px;
   padding: 0px 10px;
-  border: 1px solid #c70007;
+  border: 1px solid $primary-color-darker;
 }
 
 .company_header_container {
@@ -15,14 +18,17 @@
 }
 
 .company_name {
-  background-color: #190001;
+  background-color: #ffffff;
+  color: $primary-color-darker;
   padding: 0px 10px;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   text-align: left;
+  transform: translateY(-5px);
 }
 
 .position {
-  border: 1px solid #c70007;
+  border: 1px solid $primary-color-darker;
   padding: 5px;
   margin-bottom: 30px;
 }
@@ -32,11 +38,11 @@
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
-  transform: translateY(-20px);
+  transform: translateY(-25px);
 }
 
 .position_name {
-  background-color: #190001;
+  background-color: #ffffff;
   padding: 0px 10px;
   text-align: left;
 }
@@ -48,6 +54,6 @@
 
 .role_description_container li {
   font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 2px;
 }

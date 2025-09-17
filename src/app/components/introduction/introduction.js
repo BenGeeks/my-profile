@@ -1,35 +1,32 @@
-import React from 'react';
-
-import styles from './introduction.module.scss';
-import { ContactButtonGreen } from '../contact_button.js/contact_button';
+import { ContactButtonGreen } from "../contact_button.js/contact_button";
+import styles from "./introduction.module.scss";
+import React from "react";
 
 const Introduction = () => {
   return (
     <section className={styles.container}>
       <h2>Meet Ben</h2>
       <p>
-        {`
-        Meet a resourceful and self-taught web developer with a stellar reputation for getting the job done. With over 4 years of
-        programming experience, he specializes in React.js front-end development, as well as Next.js and MERN full-stack development.`}
+        {`I’m Ben-Hur Vergara Gican II, a Senior Full-Stack JavaScript & AI Integration Developer. With over 4 years of professional web
+        development experience, I specialize in React.js front-end development and full-stack applications using Next.js, Node.js, and
+        the MERN stack.`}
       </p>
       <br />
       <p>
-        {`
-        Having earned a Top Rated Plus rating on Upwork, this developer has successfully delivered high-quality projects, demonstrating a
-        commitment to excellence. With a background encompassing 15 years in technical support, he brings a wealth of experience in
-        assisting and troubleshooting users' concerns and issues. Additionally, boasting 6 years of thriving in a work-from-Hero
-        environment, his adaptability and discipline shine through.`}
+        {`Beyond full-stack development, I focus on applied AI solutions — from Retrieval-Augmented Generation (RAG) pipelines and
+        custom AI agents to chatbot workflows powered by LangChain, OpenAI, and vector databases. My work bridges modern web apps with
+        intelligent, AI-driven capabilities that deliver measurable business value.`}
       </p>
       <br />
       <p>
-        {`
-        Beyond his development expertise, he possesses 5 years of experience in QA testing, covering both manual and automated methods.
-        This comprehensive skill set ensures the quality and reliability of the applications he works on.`}
+        {`I hold a Top Rated Plus badge on Upwork, backed by consistent client satisfaction and a reputation for proactive problem-solving.
+        With a background of 15 years in technical support and QA testing, I bring both technical depth and strong communication skills,
+        ensuring smooth collaboration and reliable results.`}
       </p>
       <br />
       <p>
-        {`Passionate about creating seamless and visually appealing web experiences, this developer is eager to contribute his skills to
-          your projects. Consider connecting to explore how his diverse background and expertise can benefit your team!`}
+        {`Passionate about building scalable, high-performance solutions, I’m eager to help businesses and startups turn their ideas into
+        seamless digital products. Let’s connect and explore how I can contribute to your next project!`}
       </p>
       <ContactButtonGreen />
     </section>

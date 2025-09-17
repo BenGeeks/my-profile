@@ -1,7 +1,6 @@
-import React from 'react';
-import styles from './experience.module.css';
-
-import { workExperienceData } from '@/assets/data';
+import { workExperienceData } from "@/assets/data";
+import styles from "./experience.module.scss";
+import React from "react";
 
 const WorkExperiencePage = () => {
   return (

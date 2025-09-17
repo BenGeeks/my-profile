@@ -1,9 +1,9 @@
-'use client';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import styles from './header.module.css';
+"use client";
 
-import { navLinks } from '@/assets/data';
+import { usePathname } from "next/navigation";
+import styles from "./header.module.scss";
+import { navLinks } from "@/assets/data";
+import Link from "next/link";
 
 const Header = () => {
   const pathName = usePathname();

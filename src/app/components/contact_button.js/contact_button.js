@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './contact_button.module.scss';
+import styles from "./contact_button.module.scss";
+import React from "react";
 
 export const ContactButtonWhite = () => {
   return (

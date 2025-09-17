@@ -1,18 +1,18 @@
-import React from 'react';
-import styles from './hero.module.scss';
-import { Permanent_Marker, Pirata_One } from 'next/font/google';
-import { ContactButtonWhite } from '../contact_button.js/contact_button';
+import { ContactButtonWhite } from "../contact_button.js/contact_button";
+import { Permanent_Marker, Pirata_One } from "next/font/google";
+import styles from "./hero.module.scss";
+import React from "react";
 
 const permanentMarker = Permanent_Marker({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: '400',
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
 });
 
 const pirataOne = Pirata_One({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: '400',
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
 });
 
 export default function Hero() {
@@ -23,9 +23,7 @@ export default function Hero() {
         <h4 className={pirataOne.className}>Helps you build your dream project with love and perfection.</h4>
         <div className={styles.description}>
           <h2 className={permanentMarker.className}>Ben-Hur Gican II</h2>
-          <p>
-            Frontend Developer <b> &bull;</b> Fullstack Developer <b> &bull;</b> UI/UX Designer
-          </p>
+          <p>Senior Full-Stack JavaScript & AI Integration Developer</p>
 
           <ContactButtonWhite />
         </div>

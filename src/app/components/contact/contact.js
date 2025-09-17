@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from './contact.module.scss';
+import styles from "./contact.module.scss";
+import React from "react";
 
-import { ContactInfo } from '@/assets/data';
+import { ContactInfo } from "@/assets/data";
 
 const Contact = () => {
   return (

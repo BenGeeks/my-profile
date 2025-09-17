@@ -1,52 +1,64 @@
-import React from 'react';
-import styles from './personality.module.scss';
-
-import { ContactButtonWhite } from '../contact_button.js/contact_button';
+import { ContactButtonWhite } from "../contact_button.js/contact_button";
+import styles from "./personality.module.scss";
+import React from "react";
+import Image from "next/image";
 
 const Personality = () => {
   return (
     <section className={styles.container}>
+      {/* Hero background image */}
+      <Image src="/images/mountain_ranges.jpg" alt="Mountain Ranges" fill priority fetchPriority="high" className={styles.hero_bg} sizes="100vw" />
+      {/* Gradient overlay */}
+      <div className={styles.overlay}></div>
+
       <h2>Personality</h2>
+
       <div className={styles.card_container}>
-        <div className={styles.card_container_split}>
-          <div className={styles.card}>
-            <div className={`${styles.card__img} ${styles.card__img__1}`}></div>
-            <h3 className={`${styles.card__header} ${styles.card__header__1}`}>Innovative</h3>
-
-            <p>
-              Crafting modern web solutions that push the boundaries of technology. With expertise in React JS and Next JS, I build responsive, dynamic
-              applications that offer exceptional user experiences.
-            </p>
+        <div className={styles.card}>
+          <div className={styles.card__img}>
+            <Image src="/images/innovative.jpg" alt="Innovative" fill className={styles.card__img__content} sizes="(max-width: 768px) 100vw, 33vw" />
           </div>
-          <div className={styles.card}>
-            <div className={`${styles.card__img} ${styles.card__img__2}`}></div>
-            <h3 className={`${styles.card__header} ${styles.card__header__2}`}>Versatile</h3>
-
-            <p>
-              From frontend interfaces to backend systems, I deliver comprehensive solutions. My proficiency in the MERN stack allows me to create end-to-end
-              applications that are both robust and scalable.
-            </p>
-          </div>
+          <h3 className={`${styles.card__header} ${styles.bg_primary}`}>Innovative</h3>
+          <p>
+            Crafting modern web solutions that push the boundaries of technology. With expertise in React JS and Next JS, I build responsive, dynamic applications that offer exceptional user
+            experiences.
+          </p>
         </div>
-        <div className={styles.card_container_split}>
-          <div className={styles.card}>
-            <div className={`${styles.card__img} ${styles.card__img__3}`}></div>
-            <h3 className={`${styles.card__header} ${styles.card__header__3}`}>Reliable</h3>
-            <p>
-              With over four years of industry experience, I bring reliability to every project. I adhere to best practices and deliver high-quality results,
-              ensuring your project is completed on time and to the highest standards.
-            </p>
+
+        <div className={styles.card}>
+          <div className={styles.card__img}>
+            <Image src="/images/versatile.png" alt="Versatile" fill className={styles.card__img__content} sizes="(max-width: 768px) 100vw, 33vw" />
           </div>
-          <div className={styles.card}>
-            <div className={`${styles.card__img} ${styles.card__img__4}`}></div>
-            <h3 className={`${styles.card__header} ${styles.card__header__4}`}>Collaborative</h3>
-            <p>
-              Effective communication and teamwork are at the heart of my approach. I work closely with clients and stakeholders to understand their needs,
-              translating ideas into efficient, scalable code that meets project goals.
-            </p>
+          <h3 className={`${styles.card__header} ${styles.bg_secondary}`}>Versatile</h3>
+          <p>
+            From frontend interfaces to backend systems, I deliver comprehensive solutions. My proficiency in the MERN stack allows me to create end-to-end applications that are both robust and
+            scalable.
+          </p>
+        </div>
+
+        <div className={styles.card}>
+          <div className={styles.card__img}>
+            <Image src="/images/reliable.jpg" alt="Reliable" fill className={styles.card__img__content} sizes="(max-width: 768px) 100vw, 33vw" />
           </div>
+          <h3 className={`${styles.card__header} ${styles.bg_tertiary}`}>Reliable</h3>
+          <p>
+            With over four years of industry experience, I bring reliability to every project. I adhere to best practices and deliver high-quality results, ensuring your project is completed on time
+            and to the highest standards.
+          </p>
+        </div>
+
+        <div className={styles.card}>
+          <div className={styles.card__img}>
+            <Image src="/images/collaborative.jpg" alt="Collaborative" fill className={styles.card__img__content} sizes="(max-width: 768px) 100vw, 33vw" />
+          </div>
+          <h3 className={`${styles.card__header} ${styles.bg_quaternary}`}>Collaborative</h3>
+          <p>
+            Effective communication and teamwork are at the heart of my approach. I work closely with clients and stakeholders to understand their needs, translating ideas into efficient, scalable
+            code that meets project goals.
+          </p>
         </div>
       </div>
+
       <div className={styles.btn_container}>
         <ContactButtonWhite />
       </div>
