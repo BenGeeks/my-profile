@@ -1,30 +1,48 @@
-@import '@/styles/animations';
-@import '@/styles/variables';
+@import "@/styles/animations";
+@import "@/styles/variables";
 
 .hero {
-  background-image: linear-gradient(to bottom left, $primary-color-transparent-darker, $primary-color-transparent-lighter), url('/images/hero-background.jpg');
-  background-size: cover;
-  background-position: bottom;
+  position: relative;
   height: 70vw;
   display: flex;
   clip-path: polygon(0 0, 0 100%, 100% 90%, 100% 0);
+  overflow: hidden;
+}
+
+.hero_bg {
+  object-fit: cover;
+  object-position: bottom;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom left, $primary-color-transparent-darker, $primary-color-transparent-lighter);
+  z-index: 0;
 }
 
 .profile_image {
-  background-image: url('https://i.ibb.co/47fjkMZ/1705248700683.jpg');
-  background-size: cover;
-  background-position: center;
-  animation: slide-up 2s ease-out;
+  position: relative;
   width: 50%;
+  height: auto;
+  min-height: 300px;
+  z-index: 1;
+
+  .profile_img_content {
+    object-fit: cover;
+    object-position: center;
+  }
 }
 
 .text_container {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding: 30px;
-  width: 50%;
+  z-index: 2;
 
   h4 {
     font-size: 80px;
@@ -59,9 +77,8 @@
 
   p {
     opacity: 0;
-    animation: slide-left 1s ease-in-out;
-    animation-fill-mode: forwards;
-    font-family: 'Roboto', sans-serif;
+    animation: slide-left 1s ease-in-out forwards;
+    font-family: "Roboto", sans-serif;
   }
 
   p:nth-child(2) {
@@ -70,16 +87,15 @@
   p:nth-child(4) {
     animation-delay: 1.5s;
   }
-
   p:nth-child(6) {
     animation-delay: 2s;
   }
-
   p:nth-child(8) {
     animation-delay: 2.5s;
   }
 }
 
+/* Buttons */
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -92,8 +108,7 @@
   background-color: white;
   color: #000;
   position: relative;
-  animation: slide-up 1s ease-out 3s;
-  animation-fill-mode: forwards;
+  animation: slide-up 1s ease-out 3s forwards;
   opacity: 0;
   transform: translateY(100px);
 }
@@ -109,7 +124,7 @@
 }
 
 .btn::after {
-  content: '';
+  content: "";
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -127,6 +142,7 @@
   opacity: 0;
 }
 
+/* Responsiveness */
 @media (max-width: 1360px) {
   .hero {
     height: auto;
@@ -147,12 +163,15 @@
   .hero {
     height: auto;
   }
+
   .profile_image {
     width: 30%;
+    min-height: 200px;
   }
 
   .text_container {
     width: 70%;
+
     h4 {
       font-size: 60px;
     }
@@ -176,8 +195,7 @@
 @media (max-width: 600px) {
   .hero {
     clip-path: polygon(0 0, 0 100%, 100% 95%, 100% 0);
-    background-image: linear-gradient(to bottom left, $primary-color-transparent-darker, $primary-color-transparent-lighter), url('/images/me.png');
-    background-position: right;
+    flex-direction: column;
   }
 
   .profile_image {
@@ -187,6 +205,7 @@
   .text_container {
     width: 100%;
   }
+
   .description {
     padding: 20px;
 
