@@ -22,8 +22,10 @@ export default function Hero() {
       <div className={styles.hero_bg}>
         <Image src="/images/hero-background.jpg" alt="Hero Background" fill priority className={styles.hero_bg_img} sizes="100vw" />
       </div>
+      <div className={styles.mobile_profile_bg}>
+        <Image src="/images/me_profile.jpg" alt="Profile Background Mobile" fill priority className={styles.mobile_profile_img} sizes="100vw" />
+      </div>
       <div className={styles.overlay}></div>
-
       <div className={styles.profile_image}>
         <Image src="/images/me_profile.jpg" alt="Profile" fill priority className={styles.profile_img_content} sizes="50vw" />
       </div>
