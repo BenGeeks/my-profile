@@ -242,6 +242,12 @@ export const workExperienceData = [
 
 export const certificateData = [
   {
+    id: "UC-0b1628d5-0eb6-4147-9c37-37eee05b746f",
+    title: "ChatGPT and LangChain: The Complete Developer's Masterclass",
+    date: "10-03-2025",
+    source: "udemy",
+  },
+  {
     id: "UC-6ad2fa5d-7e74-488d-bb05-95f1e3f8c1e1",
     title: "Advanced CSS and Sass: Flexbox, Grid, Animations and More!",
     date: "09-18-2025",
