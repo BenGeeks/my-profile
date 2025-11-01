@@ -1,9 +1,7 @@
-import { NextRequest } from "next/server";
-
 const FORWARD_URL = "https://webhook.site/e34a972a-4781-4cea-9245-b4fa75117754";
 
 // Facebook GET webhook verification
-export async function GET(req: NextRequest) {
+export async function GET(req) {
   const { searchParams } = new URL(req.url);
   const challenge = searchParams.get("hub.challenge");
 
@@ -16,7 +14,7 @@ export async function GET(req: NextRequest) {
 }
 
 // Facebook POST webhook (actual message events)
-export async function POST(req: NextRequest) {
+export async function POST(req) {
   try {
     const body = await req.json();
 
